@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Auto Pause",
+    "version": "1.0",
+    "description": "Automatically pauses YouTube videos when the tab or window changes.",
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "youtube_pause_icon.jpg",
+        "48": "youtube_pause_icon.jpg",
+        "128": "youtube_pause_icon.jpg"
+    },
+    "action": {
+        "default_icon": {
+            "16": "youtube_pause_icon.jpg",
+            "48": "youtube_pause_icon.jpg",
+            "128": "youtube_pause_icon.jpg"
+        }
+    }
+}
